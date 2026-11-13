@@ -35,6 +35,9 @@ It will be a synchronised state with Sun Pointing.
 # Open Questions
 
 1. Should B-dot run on the ADCS or EPS board?
+1i. if we run it on the EPS board what will we do when its time to p-dump ?
+1ii.if we run it on the ADCS board what
+happens during the detumbling ? would we have to turn the ADCS board on as well
 2. If we deploy solar panels, will ADCS support them?
 3. Is it required to turn on the OBC (specifically Omega, ...) after detumbling is done?
 4. Mission statement (Shashank: required to determine whether we will do imaging at night).
