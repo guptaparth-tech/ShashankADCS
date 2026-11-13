@@ -5,19 +5,20 @@ The basic ADCS states can be divided as follows:
 ## 1. Detumbling
 
 - **Entry:** In the beginning only.
-- **What all stuff is used:** MT and RnX wheels.
+- **What all stuff is used:** MT
 
 Basically, using the B-dot algorithm to detumble the satellite.
 
 ## 2. Sun Pointing
 
 - **Entry:** CSS (coarse sun sensor), SoC (charge).
-- **What all stuff is used:** RnX wheels.
+- **What all stuff is used:** RnX wheels. IMU
 
 ## 3. Imaging
 
 - **Entry:** GPS data, triggers, target locations (can be uplinked later as well).
-- **What all stuff is used:**
+- **What all stuff is used: RxN wheels and IMU (similar to sun Pointing**
+)
 
 Exactly how it will be done will be figured out after understanding how the camera works (using datasheets).
 
