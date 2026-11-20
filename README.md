@@ -5,19 +5,20 @@ The basic ADCS states can be divided as follows:
 ## 1. Detumbling
 
 - **Entry:** In the beginning only.
-- **What all stuff is used:** MT and RnX wheels.
+- **What all stuff is used:** MT
 
 Basically, using the B-dot algorithm to detumble the satellite.
 
 ## 2. Sun Pointing
 
 - **Entry:** CSS (coarse sun sensor), SoC (charge).
-- **What all stuff is used:** RnX wheels.
+- **What all stuff is used:** RnX wheels. IMU
 
 ## 3. Imaging
 
 - **Entry:** GPS data, triggers, target locations (can be uplinked later as well).
-- **What all stuff is used:**
+- **What all stuff is used: RxN wheels and IMU (similar to sun Pointing**
+)
 
 Exactly how it will be done will be figured out after understanding how the camera works (using datasheets).
 
@@ -35,6 +36,9 @@ It will be a synchronised state with Sun Pointing.
 # Open Questions
 
 1. Should B-dot run on the ADCS or EPS board?
+1i. if we run it on the EPS board what will we do when its time to p-dump ?
+1ii.if we run it on the ADCS board what
+happens during the detumbling ? would we have to turn the ADCS board on as well
 2. If we deploy solar panels, will ADCS support them?
 3. Is it required to turn on the OBC (specifically Omega, ...) after detumbling is done?
 4. Mission statement (Shashank: required to determine whether we will do imaging at night).
